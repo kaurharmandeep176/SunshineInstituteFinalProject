@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+
+<!-- banner -->
+<div class="inner-banner">
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-gradient-secondary pt-3">
+            <h1>
+                <a class="navbar-brand" href="@Url.Action("SignIn","Login")">
+                    Sunshine
+                    <span>Institute</span>
+                </a>
+            </h1>
+
+            <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Index","Home")">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-xl-4 mx-lg-3 my-lg-0 my-3">
+                        <a class="nav-link" href="@Url.Action("About","Home")">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Gallery","Home")">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Contact","Home")">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- //header -->
+
+</div>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="@Url.Action("Index","Home")">Home</a>
+    </li>
+    <li class="breadcrumb-item active">About</li>
+</ol>
+<!-- //banner-text -->
+<section class="banner_bottom1 py-md-5">
+    <div class="container py-4 mt-2">
+        <h3 class="heading-agileinfo text-center">About  <span>Us</span></h3>
+        <div class="inner_sec_info_wthree_agile mt-md-5 pt-3">
+            <div class="row help_full">
+                <div class="col-lg-6 banner_bottom_grid help">
+                    <img src="~/images/g1.jpg" alt=" " class="img-fluid">
+                </div>
+                <div class="col-lg-6 banner_bottom_left1">
+                    <h4>Welcome Sunshine Institute</h4>
+                    <p>We are delivering best and excelent education service arocess the area with lot of experience and knowledge.</p>
+                    <p>Make a good research of our institute and know why we are better that others and start studing here
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--/newsletter-->
+<footer class="newsletter_right pymd-5 py-4" id="footer">
+    <div class="container">
+        <div class="inner-sec py-md-5 py-3">
+            <div class="row mb-md-4 mb-md-3">
+                <div class="col-lg-3 col-md-6 social-info text-left">
+                    <h3 class="tittle1 foot mb-md-5 mb-4 text-white">Get in touch</h3>
+                    <p>0926k 4th block building,king Avenue, </p>
+                    <p class="my-2"> Auckland, New Zealand</p>
+                    <p class="phone">phone: +6444 555 6789</p>
+
+                    <p class="phone">
+                        Mail:
+                        <a href="mailto:info@example.com">admin@gmail.com</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="copy-right mt-2">
+                    © 2020 Subject. All Rights Reserved | Design by
+                    <a href="#"> Sunshine Institute </a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

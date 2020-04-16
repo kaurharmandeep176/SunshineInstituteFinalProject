@@ -1,0 +1,51 @@
+﻿@model IEnumerable<SunshineInstitute.Models.AddCourse>
+
+@{
+    ViewBag.Title = "AllDetail";
+}
+
+<h2>All Courses Detail</h2>
+
+<p class="btn btn-warning">
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseDuration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseFee)
+        </th>
+        <th>Update </th>
+        <th>Delete </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseDuration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseFee)
+        </td>
+        <td>
+            <span class="btn btn-danger">   @Html.ActionLink("Edit", "Edit", new { id = item.id }) </span> </td>
+         <td>
+             <span class="btn btn-danger">  @Html.ActionLink("Delete", "Delete", new { id = item.id })</span>
+</td>
+    </tr>
+}
+
+</table>
+
+
+<hr/>
+<a href="@Url.Action("AdminWork","Login")" class="btn btn-success">BAck to Dashboard </a>
+

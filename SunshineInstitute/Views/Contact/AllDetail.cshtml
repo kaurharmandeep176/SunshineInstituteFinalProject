@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SunshineInstitute.Models.MsgQuery>
+
+@{
+    ViewBag.Title = "AllDetail";
+}
+
+<h2>All Query Detail</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Msg)
+        </th>
+        <th>Delete </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Msg)
+            </td>
+            <td>
+                <span class="btn btn-danger">
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </span>
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+
+<hr />
+<a href="@Url.Action("AdminWork","Login")" class="btn btn-success">BAck to Dashboard </a>
